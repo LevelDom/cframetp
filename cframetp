@@ -1,0 +1,16 @@
+--pls no skid it my first script
+local function Notify(...)
+    game.StarterGui:SetCore('SendNotification',...)
+end
+
+Notify({Title="Shitty code time";Text="LevelDom 1779"})
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = "bellswall"
+local pos = p1.CFrame
+local 2pos = p2.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+wait(5) --How much time before tp back (delete for infinite)
+
+p1.CFrame = pos
